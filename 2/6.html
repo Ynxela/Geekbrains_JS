@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW</title>
+</head>
+<body>
+    <script>
+    "use strict";
+    
+    let cash = prompt('Сколько денег Вы хотите внести?');
+    function ruble(cash) {
+        let endCash = +cash.substr(cash.length-1, 1);
+        // alert(endCash);
+        if (endCash === 1) {
+            return('рубль');
+        } else if (endCash > 1 && endCash < 5) {
+            return('рубля');
+        } else {
+            return('рублей');
+        }
+    }
+    alert(`Ваша сумма в ${cash} ${ruble(cash)} успешно зачислена.`);
+    
+        
+    </script>
+</body>
+</html>

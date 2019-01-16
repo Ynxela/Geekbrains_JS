@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW</title>
+</head>
+<body>
+    <script>
+    "use strict";
+        
+    let a = 2;
+    let x = 1 + (a *= 2);
+
+    alert(a); // 4
+    alert(x); // 5
+        
+    // сначала а = 2, затем, при определении х, а умножается на 2,
+    // при этом изменяется глобальная переменная в выражении в скобке,
+    // сответственно, а = 4, х = 1 + 4 = 5
+
+    </script>
+</body>
+</html>
