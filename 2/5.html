@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW</title>
+</head>
+<body>
+    <script>
+    "use strict";
+    
+    let a = 20;
+    let b = 4;
+    let operator = 'division';
+    
+    function mathOperation(a, b, operator) {  
+        switch (a, b, operator) {
+          case 'addition':
+            return(a + b);
+          case 'subtraction':
+            return(a - b);
+          case 'multiplication':
+            return(a * b);
+          case 'division':
+            return(a / b);
+          default:
+            alert('Не верный оператор');
+        }
+    }
+    
+    alert(mathOperation(a, b, operator));
+        
+    </script>
+</body>
+</html>
