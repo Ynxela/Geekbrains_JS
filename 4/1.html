@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HW</title>
+</head>
+
+<body>
+    <script>
+        "use strict";
+        
+        let number = 123;
+
+        /**
+        * Функция берет на вход число [0, 999] и создает объект, разбивая число на цифры.
+        * Если введенные данные не соответствуют условию, возвращает пустой объект.
+        * @param {number} number Число, которое превращаем в объект.
+        */
+        function numToObj (number) {
+            if (number < 0 || number > 999 || typeof number != 'number' || number % 1 != 0) {
+                console.log('Данные не удовлетворяют условию.');
+                return null;
+            } else {
+                let digits = {};
+                digits.firstDigit = number % 10;
+                let newNum = (number - digits.firstDigit) / 10;
+                digits.secondDigit = newNum % 10;
+                digits.thirdDigit = (newNum - digits.secondDigit) / 10;
+                // console.log(digits);
+                return digits;
+            }
+        }
+        
+        numToObj(number);
+        
+
+    </script>
+</body>
+
+</html>
